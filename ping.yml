@@ -1,1 +1,7 @@
+- name: Ping all Raspberry Pi
+  hosts: raspberry
+  gather_facts: no
+  tasks:
+    - name: Ping
+      ansible.builtin.ping:
 
